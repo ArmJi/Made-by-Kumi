@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadebyKumi</title>
+    <!-- ===================== CSS ==================== -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ===================== REMIXICON ==================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+
+    <!-- ===================== GSAP ==================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+
+    <!-- ===================== SWIPER ==================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!-- ===================== HEADER AND NAV ==================== -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo">
+                <img src="img/img_index/logo/logo_1.png" alt="">
+            </a>
+            <div class="nav__menu">
+                <i class="ri-menu-line menu_button" id="menu-button"></i>
+                <ul class="nav__list" id="nav-list">
+                    <h2 class="menu__title">Menu</h2>
+                    <a href="shop_bracelet.html" class="nav__item home">
+                        <img src="img/img_index/nav/bracelet.png" alt="">
+                        <span>Bracelet</span>
+                    </a>
+                    <a href="shop_hairpin.html" class="nav__item popular">
+                        <img src="img/img_index/nav/hairpin.png" alt="">
+                        <span>Hairpin</span>
+                    </a>
+                    <a href="shop_ring.html" class="nav__item event">
+                        <img src="img/img_index/nav/ring.png" alt="">
+                        <span>Ring</span>
+                    </a>
+                    <a href="shop_necklace.html" class="nav__item event">
+                        <img src="img/img_index/nav/necklace.png" alt="">
+                        <span>Necklace</span>
+                    </a>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <i class="ri-user-3-line login__button" id="login-button"></i>
+                <a href="cart.html">
+                    <i class="ri-shopping-bag-line shopbag__button"></i>
+                    <div class="cart__amount" id="cart-amount">0</div>
+                </a>   
+            </div>
+        </nav>
+    </header>
+    <div class="login" id="login-content">
+        <div class="login__group grid">
+            <h2 class="login__title">Log in</h2>
+            <form action="" class="login__form">
+                <div class="login__mail">
+                    <label for="login-email" class="login__lable">Email</label>
+                    <input type="email" placeholder="Write your email" class="login__input">
+                </div>
+                <div class="login__pass">
+                    <label for="login-pass" class="login__lable">Password</label>
+                    <input type="password" placeholder="Input your password" class="login__input">
+                </div>
+            </form>
+            <div class="">
+                <span class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </span>
+                <a href="#" class="login__forgot">You forgot your password</a>
+            </div>
+            <button class="login__button button">Log In</button>
+            <i class="ri-close-fill login__close" id="login-close"></i>           
+        </div>
+    </div> 
+
+    <!-- ===================== MAIN ==================== -->
+    <main>
+
+        <!-- ===================== HOME ==================== -->
+        <section class="home section">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <span class="home__desription">MADE WITH HEARTH</span>
+                    <h1 class="home__title">MADE BY KUMI</h1>
+                </div>
+                <div class="home__images">
+                    <img src="img/img_index/home/img_1.jpg" class="home__img-1" alt="">
+                    <img src="img/img_index/home/img_2.jpg" class="home__img-2" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CHOOSE ==================== -->
+        <section class="choose section">
+            <div class="choose__container container grid">
+                <div class="choose__images swiper">
+                    <div class="choose__swiper swiper-wrapper">
+
+                        <div class="choose__card swiper-slide" id="choose-card">
+                            <div class="rainbow__border">
+                                <span class="span"></span>
+                                <span class="span"></span>
+                            </div>
+                            <div class="choose__image">
+                                <img src="img/img_index/choose/choose_1.jpg" class="choose__img" alt="">
+                            </div>
+                        </div>
+
+                        <div class="choose__card swiper-slide" id="choose-card">
+                            <div class="rainbow__border">
+                                <span class="span"></span>
+                                <span class="span"></span>
+                            </div>
+                            <div class="choose__image">
+                                <img src="img/img_index/choose/choose_2.jpg" class="choose__img" alt="">
+                            </div>
+                        </div>
+
+                        <div class="choose__card swiper-slide" id="choose-card">
+                            <div class="rainbow__border">
+                                <span class="span"></span>
+                                <span class="span"></span>
+                            </div>
+                            <div class="choose__image">
+                                <img src="img/img_index/choose/choose_3.jpg" class="choose__img" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="choose__content">
+                    <div class="choose__data">
+                        <h3 class="choose__title">WHY CHOOSE US</h3>
+                    </div>
+                    <div class="choose___sub">
+                        <div class="choose__item">
+                            <div class="choose__item-header">
+                                High quality material
+                            </div>
+                            <div class="choose__item-description">
+                                Every material is imported from abroad, durable and not peeling.
+                            </div>
+                        </div>
+                        <div class="choose__item">
+                            <div class="choose__item-header">
+                                Hand Made 100%
+                            </div>
+                            <div class="choose__item-description">
+                                Detail-oriented with meticulous cares about works.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== BEST SELLER ==================== -->
+        <section class="best section">
+            <div class="best__container container grid">
+                <div class="best__images">
+                    <div class="best__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="best__image">
+                                    <img src="img/img_index/best/best_2.png " class="best__back" alt="">
+                                    <img src="img/img_index/best/best_pic_1.jpeg" class="best__img" alt="">    
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="best__image">
+                                    <img src="img/img_index/best/best_2.png " class="best__back" alt="">
+                                    <img src="img/img_index/best/best_pic_2.jpeg" class="best__img" alt="">    
+                                </div>                        
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="best__image">
+                                    <img src="img/img_index/best/best_2.png " class="best__back" alt="">
+                                    <img src="img/img_index/best/best_pic_3.jpeg" class="best__img" alt="">    
+                                </div>                        
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="best__image">
+                                    <img src="img/img_index/best/best_2.png " class="best__back" alt="">
+                                    <img src="img/img_index/best/best_pic_4.jpeg" class="best__img" alt="">    
+                                </div>                        
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="best__image">
+                                    <img src="img/img_index/best/best_2.png " class="best__back" alt="">
+                                    <img src="img/img_index/best/best_pic_5.jpeg" class="best__img" alt="">    
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="best__content">
+                    <div class="best__data">
+                        <h3 class="best__title">WHAT'S HOT</h3>
+                        <h3 class="best__title">BEST SELLER</h3>
+                        <h3 class="best__title">POPULAR</h3>
+                    </div>
+                    <div class="best___sub">
+                        <p>Most customers are interested.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PRODUCTS ==================== -->
+        <section class="product section">
+            <div class="product__container container">
+                <div class="product__content">
+                    <div class="product__data">
+                        <h2 class="product__title">PRODUCT</h2>
+                    </div>
+                    <a href="shop_index.html" class="product__nav">View all<i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="product__cards">
+                    <div class="product__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="product__card swiper-slide">
+                                <img src="img/img_index/product/pd_pic_1.jpeg" class="product__img" alt="">
+                                <div class="product__description">
+                                    <div class="product__name">Rabbit and Flower 1</div>
+                                    <span class="product__discount">฿129</span>
+                                    <span class="product__price">฿159</span>
+                                </div>
+                            </div>
+                            <div class="product__card swiper-slide">
+                                <img src="img/img_index/product/pd_pic_2.jpeg" class="product__img" alt="">
+                                <div class="product__description">
+                                    <div class="product__name">Rabbit and Flower 2</div>
+                                    <span class="product__discount">฿129</span>
+                                    <span class="product__price">฿159</span>
+                                </div>
+                            </div>
+                            <div class="product__card swiper-slide">
+                                <img src="img/img_index/product/pd_pic_3.jpeg" class="product__img" alt="">
+                                <div class="product__description">
+                                    <div class="product__name">Rabbit and Flower 1</div>
+                                    <span class="product__discount">฿129</span>
+                                    <span class="product__price">฿159</span>
+                                </div>
+                            </div>
+                            <div class="product__card swiper-slide">
+                                <img src="img/img_index/product/pd_pic_4.jpeg" class="product__img" alt="">
+                                <div class="product__description">
+                                    <div class="product__name">Rabbit and Flower 1</div>
+                                    <span class="product__discount">฿129</span>
+                                    <span class="product__price">฿159</span>
+                                </div>
+                            </div>
+                            <div class="product__card swiper-slide">
+                                <img src="img/img_index/product/pd_pic_5.jpeg" class="product__img" alt="">
+                                <div class="product__description">
+                                    <div class="product__name">Rabbit and Flower 1</div>
+                                    <span class="product__discount">฿129</span>
+                                    <span class="product__price">฿159</span>
+                                </div>
+                            </div>
+                            <div class="product__card swiper-slide">
+                                <img src="img/img_index/product/pd_pic_6.png" class="product__img" alt="">
+                                <div class="product__description">
+                                    <div class="product__name">Alien</div>
+                                    <span class="product__discount">฿129</span>
+                                    <span class="product__price">฿159</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TEATIMONIAL ==================== -->
+        <section class="testimonial section" id="testimonial">
+            <div class="testimonial__container container">
+                <div class="testimonial__content">
+                    <div class="testimonial__data">
+                        <h3 class="testimonial__title">
+                            CUSTOMER OPINIONS
+                        </h3>    
+                    </div>
+                </div>
+                <div class="testimonial__container">
+                    <div class="testimonial__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__image">
+                                    <img src="img/img_index/test/test_1.jpg" class="testimonial__img" alt="">
+                                </div>
+                            </div>
+                            <div class="testimonial__card swiper-slide">
+                                <img src="img/img_index/test/test_2.jpg" class="testimonial__img" alt="">
+                            </div>
+                            <div class="testimonial__card swiper-slide">
+                                <img src="img/img_index/test/test_3.jpg" class="testimonial__img" alt="">
+                            </div>
+                            <div class="testimonial__card swiper-slide">
+                                <img src="img/img_index/test/test_4.jpg" class="testimonial__img" alt="">
+                            </div>
+                            <div class="testimonial__card swiper-slide">
+                                <img src="img/img_index/test/test_5.jpg" class="testimonial__img" alt="">
+                            </div>
+                            <div class="testimonial__card swiper-slide">
+                                <img src="img/img_index/test/test_6.jpg" class="testimonial__img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+
+<!-- ===================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__data1">
+                    <a href="#" class="footer__logo">
+                        <img src="img/img_index/logo/logo_1.png" alt="">
+                    </a>
+                    <p class="footer__description">
+                        <i class="ri-flower-line"></i>
+                        <i class="ri-hand"></i>
+                        <i class="ri-hearts-line"></i>
+                        <i class="ri-bard-line"></i>
+                        <i class="ri-emotion-happy-line"></i>
+                        <i class="ri-sparkling-line"></i>
+                        <i class="ri-aliens-line"></i>
+                        <i class="ri-ghost-2-line"></i>
+                        <br></i> hand made 200%<br>
+                        <i class="ri-flower-line"></i>
+                        <i class="ri-emotion-happy-line"></i>
+                        <i class="ri-hand"></i>
+                        <i class="ri-bard-line"></i>
+                        <i class="ri-aliens-line"></i>
+                        <i class="ri-ghost-2-line"></i>
+                        <i class="ri-sparkling-line"></i>
+                        <i class="ri-hearts-line"></i>
+                    </p>
+            </div>
+            <div class="footer__data2 grid">
+                <div>
+                    <h3 class="footer__title">About</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Awards</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Terms of services</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Company</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Community</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Our team</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Help center</a>                            
+                        </li>
+                        </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <address class="footer__info">
+                                Sukhumvit 93,<br>
+                                Phra Khanong,<br>                                     
+                                Bangkok
+                            </address>
+                        </li>
+                        <li>
+                            <address class="footer__info">
+                                nattapol1193@gmail.com <br>
+                                091-871-4810
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Social</h3>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="https://www.instagram.com/madebykumi/" target="_blank" class="footer__social-link">                                
+                            <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="footer__copy">
+            &#169; All Rights Reserved By Made by Kumi
+        </span>
+    </footer>
+
+    <!-- ====================== SCROLL UP ==================== -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- ====================== CART ICON UPDATE ==================== -->
+    <script>
+    let iconCart = document.getElementById('cart-amount')
+
+    /* ====================== UPDATE CART DATA AFTER RELOAD  ====================== */
+        cart = JSON.parse(localStorage.getItem("cartMemory"));
+
+        console.log('55555')
+        /* ====================== UPDATE ICON CART ====================== */
+        const totalQuantity = () => {
+            let totalQuantity = 0;
+            if (cart.length > 0){
+                cart.forEach(item => {
+                    totalQuantity = totalQuantity + item.quantity;
+                });
+            };
+            iconCart.innerHTML = totalQuantity;
+        };
+        totalQuantity();
+    </script>
+
+    <!-- ===================== MAIN JS ==================== -->
+    <script src="js/main.js"></script>
+
+    <!-- ===================== GSAP ==================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+
+    <!-- ===================== SWIPER JS ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ===================== SWIPER JS (swiper) ==================== -->
+    <script src="js/animation.js"></script>
+
+</body>
+</html>

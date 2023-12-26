@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadebyKumi/Bracelet</title>
+    <!-- ===================== CSS ==================== -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ===================== REMIXICON ==================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+</head>
+<body>
+    <!-- ===================== HEADER AND NAV ==================== -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo">
+                <img src="img/img_index/logo/logo_1.png" alt="">
+            </a>
+            <div class="nav__menu">
+                <i class="ri-menu-line menu_button" id="menu-button"></i>
+                <ul class="nav__list" id="nav-list">
+                    <h2 class="menu__title">Menu</h2>
+                    <a href="shop_bracelet.html" class="nav__item home">
+                        <img src="img/img_index/nav/bracelet.png" alt="">
+                        <span>Bracelet</span>
+                    </a>
+                    <a href="shop_hairpin.html" class="nav__item popular">
+                        <img src="img/img_index/nav/hairpin.png" alt="">
+                        <span>Hairpin</span>
+                    </a>
+                    <a href="shop_ring.html" class="nav__item event">
+                        <img src="img/img_index/nav/ring.png" alt="">
+                        <span>Ring</span>
+                    </a>
+                    <a href="shop_necklace.html" class="nav__item event">
+                        <img src="img/img_index/nav/necklace.png" alt="">
+                        <span>Necklace</span>
+                    </a>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <i class="ri-user-3-line login__button" id="login-button"></i>
+                <a href="cart.html">
+                    <i class="ri-shopping-bag-line shopbag__button"></i>
+                    <div class="cart__amount" id="cart-amount">0</div>
+                </a>             
+            </div>
+        </nav>
+    </header>
+    <div class="login" id="login-content">
+        <div class="login__group grid">
+            <h2 class="login__title">Log in</h2>
+            <form action="" class="login__form">
+                <div class="login__mail">
+                    <label for="login-email" class="login__lable">Email</label>
+                    <input type="email" placeholder="Write your email" class="login__input">
+                </div>
+                <div class="login__pass">
+                    <label for="login-pass" class="login__lable">Password</label>
+                    <input type="password" placeholder="Input your password" class="login__input">
+                </div>
+            </form>
+            <div class="">
+                <span class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </span>
+                <a href="#" class="login__forgot">You forgot your password</a>
+            </div>
+            <button class="login__button button">Log In</button>
+            <i class="ri-close-fill login__close" id="login-close"></i>           
+        </div>
+    </div> 
+
+    <!-- ===================== MAIN ==================== -->
+    <main>
+
+        <!-- ===================== PAGE HEADER ==================== -->
+        <section class="page_header section">
+            <div class="page_header_title container">
+                    <span>PRODUCT / NECKLACE</span>
+            </div>
+        </section>
+
+        <!-- ===================== SHOP ==================== -->
+        <section class="products">
+            <div class="products__container container grid" id="products-bracelet-container">
+                
+            </div>
+        </section>
+
+    </main>
+    <!-- ===================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__data1">
+                    <a href="#" class="footer__logo">
+                        <img src="img/img_index/logo/logo_1.png" alt="">
+                    </a>
+                    <p class="footer__description">
+                        <i class="ri-flower-line"></i>
+                        <i class="ri-hand"></i>
+                        <i class="ri-hearts-line"></i>
+                        <i class="ri-bard-line"></i>
+                        <i class="ri-emotion-happy-line"></i>
+                        <i class="ri-sparkling-line"></i>
+                        <i class="ri-aliens-line"></i>
+                        <i class="ri-ghost-2-line"></i>
+                        <br></i> hand made 200%<br>
+                        <i class="ri-flower-line"></i>
+                        <i class="ri-emotion-happy-line"></i>
+                        <i class="ri-hand"></i>
+                        <i class="ri-bard-line"></i>
+                        <i class="ri-aliens-line"></i>
+                        <i class="ri-ghost-2-line"></i>
+                        <i class="ri-sparkling-line"></i>
+                        <i class="ri-hearts-line"></i>
+                    </p>
+            </div>
+            <div class="footer__data2 grid">
+                <div>
+                    <h3 class="footer__title">About</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Awards</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Terms of services</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Company</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Community</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Our team</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Help center</a>                            
+                        </li>
+                        </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <address class="footer__info">
+                                Sukhumvit 93,<br>
+                                Phra Khanong,<br>                                     
+                                Bangkok
+                            </address>
+                        </li>
+                        <li>
+                            <address class="footer__info">
+                                nattapol1193@gmail.com <br>
+                                091-871-4810
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Social</h3>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="https://www.instagram.com/madebykumi/" target="_blank" class="footer__social-link">                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="footer__copy">
+            &#169; All Rights Reserved By Made by Kumi
+        </span>
+    </footer>
+
+    <!-- ====================== SCROLL UP ==================== -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- ===================== MAIN JS ==================== -->
+    <script src="js/main.js"></script>
+
+    <!-- ===================== SHOP JS ==================== -->
+    <script src="js/shop_necklace.js"></script>
+
+</body>
+</html>

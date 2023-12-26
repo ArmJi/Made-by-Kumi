@@ -1,0 +1,170 @@
+[
+    {
+        "type": "bracelet",
+        "id": "bc_1",
+        "name": "Rabbit and Flower 1",
+        "price": 159,
+        "discount": 129,
+        "img": "img/img_shop/bracelet/pd_pic_1.jpeg"
+    },
+    {
+        "type": "bracelet",
+        "id": "bc_2",
+        "name": "Rabbit and Flower 2",
+        "price": 159,
+        "discount": 129,
+        "img": "img/img_shop/bracelet/pd_pic_2.jpeg"
+    },
+    {
+        "type": "bracelet",
+        "id": "bc_3",
+        "name": "Cat and Flower",
+        "price": 159,
+        "discount": 129,
+        "img": "img/img_shop/bracelet/pd_pic_3.jpeg"
+    },
+    {
+        "type": "bracelet",
+        "id": "bc_4",
+        "name": "Halloween",
+        "price": 159,
+        "discount": 129,
+        "img": "img/img_shop/bracelet/pd_pic_4.jpeg"
+    },
+    {
+        "type": "bracelet",
+        "id": "bc_5",
+        "name": "Smile Flower",
+        "price": 159,
+        "discount": 129,
+        "img": "img/img_shop/bracelet/pd_pic_5.jpeg"
+    },
+    {
+        "type": "bracelet",
+        "id": "bc_6",
+        "name": "Alien",
+        "price": 159,
+        "discount": 129,
+        "img": "img/img_shop/bracelet/pd_pic_6.jpeg"
+    },
+    {
+        "type": "hairpin",
+        "id": "hp_1",
+        "name": "Rabbit and Flower 1",
+        "price": 59,
+        "discount": 39,
+        "img": "img/img_shop/hairpin/pd_pic_1.jpg"
+    },
+    {
+        "type": "hairpin",
+        "id": "hp_2",
+        "name": "Rabbit and Butterfly",
+        "price": 59,
+        "discount": 39,
+        "img": "img/img_shop/hairpin/pd_pic_2.jpg"
+    },
+    {
+        "type": "hairpin",
+        "id": "hp_3",
+        "name": "Puppy and Cherry",
+        "price": 59,
+        "discount": 39,
+        "img": "img/img_shop/hairpin/pd_pic_3.jpg"
+    },
+    {
+        "type": "hairpin",
+        "id": "hp_4",
+        "name": "Rabbit and Flower 2",
+        "price": 59,
+        "discount": 39,
+        "img": "img/img_shop/hairpin/pd_pic_4.jpg"
+    },
+    {
+        "type": "hairpin",
+        "id": "hp_5",
+        "name": "Puppy and Flower 1",
+        "price": 59,
+        "discount": 39,
+        "img": "img/img_shop/hairpin/pd_pic_5.jpg"
+    },
+    {
+        "type": "hairpin",
+        "id": "hp_6",
+        "name": "Cat and Flower 1",
+        "price": 59,
+        "discount": 39,
+        "img": "img/img_shop/hairpin/pd_pic_6.jpg"
+    },
+    {
+        "type": "hairpin",
+        "id": "hp_7",
+        "name": "Cat and Flower 2",
+        "price": 59,
+        "discount": 39,
+        "img": "img/img_shop/hairpin/pd_pic_7.jpg"
+    },
+    {
+        "type": "hairpin",
+        "id": "hp_8",
+        "name": "Puppy and Flower 2",
+        "price": 59,
+        "discount": 39,
+        "img": "img/img_shop/hairpin/pd_pic_8.jpg"
+    },
+    {
+        "type": "hairpin",
+        "id": "hp_9",
+        "name": "Rabbit and Flower 3",
+        "price": 59,
+        "discount": 39,
+        "img": "img/img_shop/hairpin/pd_pic_9.jpg"
+    },
+    {
+        "type": "ring",
+        "id": "rg_1",
+        "name": "Rainbow",
+        "price": 39,
+        "discount": 29,
+        "img": "img/img_shop/ring/pd_pic_1.jpg"
+    },
+    {
+        "type": "ring",
+        "id": "rg_2",
+        "name": "Puppy",
+        "price": 39,
+        "discount": 29,
+        "img": "img/img_shop/ring/pd_pic_2.jpg"
+    },
+    {
+        "type": "ring",
+        "id": "rg_3",
+        "name": "Broccoli",
+        "price": 39,
+        "discount": 29,
+        "img": "img/img_shop/ring/pd_pic_3.jpg"
+    },
+    {
+        "type": "necklace",
+        "id": "nl_1",
+        "name": "Christmas 1",
+        "price": 89,
+        "discount": 69,
+        "img": "img/img_shop/necklace/pd_pic_1.jpg"
+    },
+    {
+        "type": "necklace",
+        "id": "nl_2",
+        "name": "Christmas 2",
+        "price": 89,
+        "discount": 69,
+        "img": "img/img_shop/necklace/pd_pic_2.jpg"
+    },
+    {
+        "type": "necklace",
+        "id": "nl_3",
+        "name": "Christmas 3",
+        "price": 89,
+        "discount": 69,
+        "img": "img/img_shop/necklace/pd_pic_3.jpg"
+    }
+]
