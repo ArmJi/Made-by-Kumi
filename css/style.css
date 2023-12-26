@@ -41,6 +41,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: var(--clr-text);
 }
 
 main{
@@ -108,7 +109,7 @@ img{
     background-color: var(--clr-button);
     border: none;
     padding-block: .5rem;
-    border-radius: 5px;
+    border-radius: .3rem;
     transition: background-color .5s;
 }
 
@@ -153,10 +154,10 @@ img{
     display: flex;
     align-items: center;
     margin-inline: .75rem;
-    border-radius: 5px;
+    border-radius: .3rem;
     transition: background-color .5s;
-    padding-inline: 0.2rem;
-    column-gap: 0.25rem;
+    padding-inline: .2rem;
+    column-gap: .25rem;
 }
 
 .nav__item img{
@@ -170,7 +171,6 @@ img{
 
 .nav__actions i{
     margin-inline: .25rem;
-    border-radius: 5px;
     transition: color .5s;
     font-size: 1.2rem;
 }
@@ -226,10 +226,8 @@ img{
         background-color: var(--clr-fourth);
         box-shadow: 5px 5px 10px hsla(0, 0%, 24%, 0.1);
         transition: left .4s;
-        border-radius: 7px;
-        padding-bottom: 1.5rem;
-        padding-top: 1.5rem;
-        padding-inline: 1rem;
+        border-radius: .45rem;
+        padding: 1.5rem 1rem;
         z-index: var(--z-fixed);
     }
 
@@ -239,11 +237,10 @@ img{
     }
 
     .nav__item{
-        padding-block: 0.5rem;
-        border-radius: 0;
+        padding-block: .5rem;
         margin-inline: 0;
         padding-left: 1.2rem;
-        border-radius: 7px;
+        border-radius: .45rem;
     }
 
     .menu_button{
@@ -296,9 +293,8 @@ img{
     position: relative;
     padding: 2rem;
     background-color: var(--clr-primary);
-    margin-block: 4rem;
-    margin-inline: 2rem;
-    border-radius: 7px;
+    margin: 4rem 2rem;
+    border-radius: .45rem;
 }
 
 .login__lable{
@@ -384,7 +380,7 @@ img{
     z-index: 1;
     height: 300px;
     max-width: initial;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
 }
 
 /* ====================== CHOOSE ====================== */
@@ -441,13 +437,13 @@ div .choose__image{
 
 .choose___sub{
     display: grid;
-    row-gap: 0.5rem;
+    row-gap: .5rem;
 }
 
 .choose__data{
     border-radius: 75% 25% 76% 24% / 49% 56% 44% 51%;
     background-color: var(--clr-primary);
-    padding-block: 0.5rem;
+    padding-block: .5rem;
     margin-bottom: 1rem;
 }
 
@@ -499,8 +495,8 @@ div .choose__image{
 .best__img{
     width: 230px;
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 1rem;
+    left: 1rem;
     z-index: 1;
 }
 
@@ -529,22 +525,22 @@ div .choose__image{
 
 .best___sub{
     display: grid;
-    row-gap: 0.5rem;
+    row-gap: .5rem;
     font-weight: var(--fw-light);
 }
 
 .best__data{
     border-radius: 75% 25% 76% 24% / 49% 56% 44% 51%;
     background-color: var(--clr-primary);
-    padding-block: 0.5rem;
+    padding-block: .5rem;
     margin-bottom: 1rem;
 }
 
 /* ====================== PRODUCT ====================== */
 .product__img{
     width: 220px;
-    border-radius: 0.7rem;
-    margin-bottom: 0.7rem;
+    border-radius: .7rem;
+    margin-bottom: .7rem;
 }
 
 div .product__card{
@@ -554,19 +550,19 @@ div .product__card{
     justify-content: center;
     background-color: var(--clr-second);
     padding: 1rem;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
     width: max-content;
 }
 
 
 .product__description{
     text-align: center;
-    font-size: 0.8rem;
+    font-size: .8rem;
 }
 
 .product__price{
     text-decoration: line-through;
-    font-size: 0.7rem;
+    font-size: .7rem;
     scale: 2;
 }
 
@@ -582,7 +578,7 @@ span .product__price:hover{
 .product__data{
     border-radius: 75% 25% 76% 24% / 49% 56% 44% 51%;
     background-color: var(--clr-primary);
-    padding-block: 0.5rem;
+    padding-block: .5rem;
     margin-bottom: 1rem;
 }
 
@@ -612,8 +608,8 @@ div .swiper-button-next{
     width: initial;
     height: initial;
     background-color: var(--clr-fourth);
-    padding: 0.5rem;
-    border-radius: 0.7rem;
+    padding: .5rem;
+    border-radius: .7rem;
     font-size: 1.5rem;
     color: var(--clr-button);
     transition: border .4s, backgroud-color .4s;
@@ -628,7 +624,7 @@ div .swiper-button-next{
 .testimonial__data{
     border-radius: 75% 25% 76% 24% / 49% 56% 44% 51%;
     background-color: var(--clr-primary);
-    padding-block: 0.5rem;
+    padding-block: .5rem;
     margin-bottom: 1rem;
 }
 
@@ -641,8 +637,7 @@ div .swiper-button-next{
 
 .testimonial__img{
     width: 180px;
-    height: max-content;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
 }
 
 div .testimonial__card{
@@ -651,7 +646,7 @@ div .testimonial__card{
     align-items: center;
     width: max-content;
     padding: .5rem;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
     background-color: var(--clr-fifth);
     border: .5rem solid var(--clr-fourth);
 }
@@ -676,7 +671,7 @@ div .testimonial__card{
 
 .footer__container{
     background-color: var(--clr-fourth);
-    border-radius: 0.7rem;
+    border-radius: .7rem;
     gap: 0rem;
     margin-top: 3.5rem;
 }
@@ -790,14 +785,14 @@ div .testimonial__card{
     .choose__title,
     .product__title,
     .testimonial__title{
-        font-size: calc(var(--fs-h3) + 0.25rem);
+        font-size: calc(var(--fs-h3) + .25rem);
     }
 
     .footer__data2{
         grid-template-columns: repeat(3, 1fr);
         padding-top: 2rem;
         padding-right: 2rem;
-        gap: 0.5rem;
+        gap: .5rem;
     }
 
     .choose__container{
@@ -853,7 +848,7 @@ div .testimonial__card{
     }
     
     .nav__item span{
-        font-size: calc(var(--fs-small) + 0.2rem);
+        font-size: calc(var(--fs-small) + .2rem);
     }
 
     .nav__actions i{
@@ -883,7 +878,7 @@ div .testimonial__card{
 
     .home__desription{
         font-family: var(--ff-second);
-        font-size: calc(var(--fs-small) + 0.5rem);
+        font-size: calc(var(--fs-small) + .5rem);
     }
     
     .home__title{
@@ -915,7 +910,7 @@ div .testimonial__card{
         grid-template-columns: repeat(4, 1fr);
         padding-top: 2rem;
         padding-right: 2rem;
-        gap: 0.5rem;
+        gap: .5rem;
     }
 }
 
@@ -966,15 +961,15 @@ div .testimonial__card{
     bottom: 1rem;
     right: 1rem;
     border: none;
+    background-color: var(--clr-second);
     border-radius: 0.25rem;
-    background-color: var(--clr-body);
     padding: 0.2rem;
     transition: background-color .4s;
+    cursor: pointer;
 }
 
 .products_button:hover{
-    background-color: var(--clr-primary);
-
+    background-color: #ebcdcd;
 }
 
 .products__container{
@@ -983,7 +978,7 @@ div .testimonial__card{
 }
 
 .page_header_title{
-    font-size: calc(var(--fs-nomal) + 0.25rem);
+    font-size: calc(var(--fs-nomal) + .25rem);
     font-weight: var(--fw-bold)
 }
 
@@ -1042,7 +1037,7 @@ div .testimonial__card{
 
 .product__cart__price{
     text-decoration: line-through;
-    font-size: 0.7rem;
+    font-size: .7rem;
     scale: 2;
 }
 
@@ -1054,7 +1049,7 @@ div .testimonial__card{
     grid-template-columns: 167px auto;
     background-color: var(--clr-second);
     padding: 1rem;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
     position: relative;
 }
 
@@ -1062,7 +1057,7 @@ div .testimonial__card{
 .btn__reduce{
     background-color: var(--clr-primary);
     border-radius: 50%;
-    padding: 0.15rem;
+    padding: .15rem;
     font-size: 1rem;
     transition: background-color .4s;
     cursor: pointer;
@@ -1076,8 +1071,7 @@ div .testimonial__card{
 .product__cart_quantity{
     background-color: var(--clr-body);
     width: max-content;
-    padding-block: 0.35rem;
-    padding-inline: 0.35rem;
+    padding: .35rem;
     border-radius: 20% / 50%;
     display: flex;
     align-items: center;
@@ -1089,7 +1083,7 @@ div .testimonial__card{
 }
 
 .product__cart__description > div{
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
 }
 
 .btn_del{
@@ -1098,8 +1092,8 @@ div .testimonial__card{
     right: 1rem;
     font-size: 1.5rem;
     transition: background-color .4s;
-    border-radius: 0.25rem;
-    padding-inline: 0.125rem;
+    border-radius: .25rem;
+    padding-inline: .125rem;
     cursor: pointer;
 }
 
@@ -1115,12 +1109,12 @@ div .testimonial__card{
 .product__cart__total > div >div{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.25rem;
+    margin-bottom: .25rem;
 }
 
 .cart__checkout{
     display: block;
-    padding-inline: 0.5rem;
+    padding-inline: .5rem;
     color: var(--clr-text);
     text-align: center;
 }
@@ -1130,7 +1124,7 @@ div .testimonial__card{
 }
 
 .cart__title{
-    font-size: calc(var(--fs-nomal) + 0.25rem);
+    font-size: calc(var(--fs-nomal) + .25rem);
     font-weight: var(--fw-bold)
 }
 
@@ -1139,7 +1133,7 @@ div .testimonial__card{
 }
 
 .cart__start{
-    padding-inline: 0.5rem;
+    padding-inline: .5rem;
     display: block;
     width: max-content;
 }
@@ -1168,22 +1162,22 @@ div .testimonial__card{
 }
 
 .checkout__form{
-    margin-bottom: 0.5rem;
-    border-radius: 0.7rem;
+    margin-bottom: .5rem;
+    border-radius: .7rem;
 }
 
 .checkout__form > h3{
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
 }
 
 .checkout__form > p{
-    margin-block: 0.4rem;
+    margin-block: .4rem;
     font-size: var(--fs-small);
     font-weight: var(--fw-semibold);
 }
 
 .checkout__form > form > div{
-    margin-bottom: 0.25rem;
+    margin-bottom: .25rem;
 }
 
 .checkout__exp{
@@ -1202,7 +1196,7 @@ div .testimonial__card{
 }
 
 .checkout__continue{
-    padding-inline: 0.5rem;
+    padding-inline: .5rem;
 }
 
 .checkout{
@@ -1214,7 +1208,7 @@ div .testimonial__card{
 } 
 
 .checkout__title{
-    font-size: calc(var(--fs-nomal) + 0.25rem);
+    font-size: calc(var(--fs-nomal) + .25rem);
     font-weight: var(--fw-bold);
     margin-bottom: 1rem;
 }
@@ -1241,7 +1235,7 @@ div .testimonial__card{
 .checkout__container > div{
     background-color: var(--clr-primary);
     padding: 1rem;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
     position: relative;
 }
 

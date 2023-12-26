@@ -3,7 +3,7 @@ let listProductHTML = document.getElementById('products-bracelet-container')
 let listCartHTML = document.getElementById('product-cart-container')
 let iconCart = document.getElementById('cart-amount')
 let products = []
-let cart = JSON.parse(localStorage.getItem("cartMemory"))
+let cart = JSON.parse(localStorage.getItem("cartMemory")) || [];
 let cartTotal = document.getElementById('product-cart-total')
 
 /* ====================== ADD DATA FROM JSON FOR CART.JS ====================== */
@@ -61,34 +61,25 @@ listCartHTML.addEventListener('click', (event) => {
         let id_product = positionClick.parentElement.parentElement.parentElement.dataset.id;
         let type = 'reduce';
         if (positionClick.classList.contains('btn__add')){
-            console.log('add')
             type = 'add';
-            console.log('type :', type)
         }
         if (positionClick.classList.contains('btn_del')){
-            console.log('del')
             type = 'delete'
-            console.log('type :', type)
         };
         changeQuantityCart(id_product,type);
     }
 })
 
 const changeQuantityCart = (id_product,type) => {
-    console.log(id_product,type)
     let positionItemInCart = cart.findIndex((value) => value.id_product == id_product);
     if (positionItemInCart >= 0){
         let info = cart[positionItemInCart];
         switch (type) {
             case 'add':
-                console.log('add active')
-                console.log(positionItemInCart)
                 cart[positionItemInCart].quantity = cart[positionItemInCart].quantity + 1;
                 break;
             
             case 'reduce':
-                console.log('reduce active')
-                console.log(positionItemInCart)
                 cart[positionItemInCart].quantity = cart[positionItemInCart].quantity - 1;
                 if (cart[positionItemInCart].quantity < 1){
                     cart.splice(positionItemInCart, 1);
@@ -96,8 +87,6 @@ const changeQuantityCart = (id_product,type) => {
                 break;
 
             case 'delete':
-                console.log('del active');
-                console.log(cart[positionItemInCart]);
                 cart.splice(positionItemInCart, 1);
                 break;
 

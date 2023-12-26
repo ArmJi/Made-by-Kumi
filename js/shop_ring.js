@@ -21,7 +21,7 @@ const addDataToHTML = () => {
                     <span class="products__discount">฿${product.discount}</span>
                     <span class="products__price">฿${product.price}</span>
                 </div>
-                <button class="products_button button">Add to Cart</button>`;
+                <button class="products_button">Add to Cart</button>`;
             listProductHTML.appendChild(newProduct);
             }
         })
@@ -38,7 +38,7 @@ listProductHTML.addEventListener('click', (event) => {
 })
 
 const addToCart = (id_product) => {
-    cart = JSON.parse(localStorage.getItem("cartMemory"))
+    cart = JSON.parse(localStorage.getItem("cartMemory")) || [];
     let positionThisProductInCart = cart.findIndex((value) => value.id_product==id_product);
     if (cart.length <= 0){
         cart = [{
@@ -82,7 +82,6 @@ const totalQuantity = () => {
     if (cart.length > 0){
         cart.forEach(item => {
             totalQuantity = totalQuantity + item.quantity;
-            console.log(totalQuantity)
         });
     };
     iconCart.innerHTML = totalQuantity;
