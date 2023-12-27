@@ -37,6 +37,11 @@
 }
 
 /* ====================== PRODUCTS CART ====================== */
+.page_header_title{
+    font-size: calc(var(--fs-nomal) + .25rem);
+    font-weight: var(--fw-bold)
+}
+
 .product__cart__images{
     position: relative;
     height: 200px;
@@ -298,5 +303,9 @@
 @media screen and (min-width: 1150px) {
     .checkout{
         padding-top: 4.5rem;
+    }
+
+    .page_header{
+        margin-top: 2rem;
     }
 }
