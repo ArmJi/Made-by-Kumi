@@ -84,7 +84,7 @@ const changeQuantityCart = (id_product,type) => {
                     cart.splice(positionItemInCart, 1);
                 }
                 break;
-
+                
             case 'delete':
                 cart.splice(positionItemInCart, 1);
                 break;

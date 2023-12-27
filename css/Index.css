@@ -200,6 +200,7 @@ div .choose__image{
     width: 250px;
     margin-bottom: 1.5rem;
     margin-inline: auto;
+    position: relative;
 }
 
 .best__title{
@@ -227,6 +228,16 @@ div .choose__image{
     margin-bottom: 1rem;
 }
 
+.swiper{
+    --swiper-pagination-color: var(--clr-button);
+}
+
+#best-pagination{
+    position: absolute;
+    bottom: -1.5rem;
+}
+
+
 /* ====================== PRODUCT ====================== */
 .product__img{
     width: 220px;
@@ -244,7 +255,6 @@ div .product__card{
     border-radius: .7rem;
     width: max-content;
 }
-
 
 .product__description{
     text-align: center;

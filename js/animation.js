@@ -25,6 +25,10 @@ var swiperChoose = new Swiper(".choose__images", {
 var swiper = new Swiper(".best__swiper", {
     effect: "cards",
     grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    }
 });
 
 /* ====================== SWIPER JS (PRODUCT) ====================== */
