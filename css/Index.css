@@ -139,8 +139,8 @@ div .choose__image{
 }
 
 .rainbow__border{
-    width :  100%;
-    height:  100%;
+    width :  500px;
+    height:  500px;
     animation: o-rotate-360 linear 8s infinite;
   
     span {
