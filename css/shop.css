@@ -1,0 +1,127 @@
+/* ====================== GOOGLE FONT ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Playpen+Sans:wght@300;400;500;600;700&display=swap');
+:root{
+    --header-height: 3.5rem;
+
+    /* ====================== BLAND COLORS ====================== */
+    --clr-primary: #c3c7f3;
+    --clr-second: #f3dcdc;
+    --clr-third: #e3aadd;
+    --clr-fourth: #e1e3f7;
+    --clr-fifth: #f4e7fb;
+    --clr-body: #ffffff;
+    --clr-text: #000000;
+    --clr-button: #c8a8e9;
+
+    /* ====================== FONT AND TYPOGRAPHY ====================== */
+    --ff-primary: 'Caprasimo', serif;
+    --ff-second: 'Playpen Sans', cursive;
+    --fs-biggest: 10rem;
+    --fs-h1: 7rem;
+    --fs-h2: 3rem;
+    --fs-h3: 2rem;
+    --fs-nomal: 1rem;
+    --fs-small: 0.8rem;
+
+    /* ====================== FONT WEIGHT ====================== */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* ====================== Z-INDEX ====================== */
+    --z-tooltip: 10;
+    --z-img: 20;
+    --z-fixed: 30;
+}
+
+/* ====================== PRODUCTS SHOP ====================== */
+.products__card{
+    position: relative;
+    height: 300px;
+    width: 250px;
+    margin-inline: auto;
+    display: block;
+}
+
+.products__back{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    z-index: 2;
+    border-left: 1px solid rgb(218, 217, 217);
+}
+
+.products__img{
+    width: 230px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+
+.products__description{
+    position: absolute;
+    left: 1rem;
+    font-size: 0.8rem;
+    z-index: 3;
+    bottom: 1rem;
+    color: var(--clr-text);
+}
+
+.products__price{
+    text-decoration: line-through;
+    font-size: 0.7rem;
+    scale: 2;
+}
+
+.products_button{
+    font-size: var(--fs-small);
+    position: absolute;
+    z-index: 3;
+    bottom: 1rem;
+    right: 1rem;
+    border: none;
+    background-color: var(--clr-second);
+    border-radius: 0.25rem;
+    padding: 0.2rem;
+    transition: background-color .4s;
+    cursor: pointer;
+}
+
+.products_button:hover{
+    background-color: #ebcdcd;
+}
+
+.products__container{
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.page_header_title{
+    font-size: calc(var(--fs-nomal) + .25rem);
+    font-weight: var(--fw-bold)
+}
+
+@media screen and (min-width: 576px) {
+    .products__container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .products__container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .products__container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .page_header{
+        margin-top: 2rem;
+    }
+}

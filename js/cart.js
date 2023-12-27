@@ -1,5 +1,4 @@
 let iconSpan = document.getElementById('login-close')
-let listProductHTML = document.getElementById('products-bracelet-container')
 let listCartHTML = document.getElementById('product-cart-container')
 let iconCart = document.getElementById('cart-amount')
 let products = []

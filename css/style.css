@@ -345,6 +345,10 @@ img{
     opacity: 1;
 }
 
+
+/* ===============================================  Index ============================================= */
+
+
 /* ====================== HOME ====================== */
 .home__content{
     margin: 1.5rem 0rem 1.5rem;
@@ -651,6 +655,13 @@ div .testimonial__card{
     border: .5rem solid var(--clr-fourth);
 }
 
+
+
+/* ==========================================  Index ============================================ */
+
+
+
+
 /* ====================== FOOTER ====================== */
 .footer__logo img{
     height: 50px;
@@ -738,6 +749,8 @@ div .testimonial__card{
         margin-inline: 1rem;
     }
 
+
+    /* ========== index ============ */
     .choose__img{
         width: 260px;
       }
@@ -768,32 +781,23 @@ div .testimonial__card{
         padding-top: 2rem;
     }
 
+    /* ========== index ============ */
+  
     .product__nav{
         font-size: var(--fs-nomal);
-    }
-
-    .login__group{
-        margin-inline: auto;
-        width: 448px;
     }
 }
 
 /* For Large Device */
 @media screen and (min-width: 768px){
-
-    .best__title,
-    .choose__title,
-    .product__title,
-    .testimonial__title{
-        font-size: calc(var(--fs-h3) + .25rem);
-    }
-
     .footer__data2{
         grid-template-columns: repeat(3, 1fr);
         padding-top: 2rem;
         padding-right: 2rem;
         gap: .5rem;
     }
+
+    /* ========== index ============ */
 
     .choose__container{
         grid-template-columns: 300px 400px;
@@ -821,6 +825,13 @@ div .testimonial__card{
 
     .best__content{
         justify-content: center;
+    }
+
+    .best__title,
+    .choose__title,
+    .product__title,
+    .testimonial__title{
+        font-size: calc(var(--fs-h3) + .25rem);
     }
 }
 
@@ -854,6 +865,15 @@ div .testimonial__card{
     .nav__actions i{
         font-size: 1.4rem;
     }
+
+    .footer__data2{
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 2rem;
+        padding-right: 2rem;
+        gap: .5rem;
+    }
+
+/* ==================== index ======================= */
 
     .product__nav{
         top: 2.5rem;
@@ -905,14 +925,12 @@ div .testimonial__card{
     .testimonial__title{
         font-size: var(--fs-h2);
     }
-
-    .footer__data2{
-        grid-template-columns: repeat(4, 1fr);
-        padding-top: 2rem;
-        padding-right: 2rem;
-        gap: .5rem;
-    }
 }
+
+
+
+
+
 
 /* ====================== PRODUCTS SHOP ====================== */
 .products__card{
@@ -1003,6 +1021,10 @@ div .testimonial__card{
         margin-top: 2rem;
     }
 }
+
+
+
+
 
 /* ====================== PRODUCTS CART ====================== */
 .product__cart__images{
