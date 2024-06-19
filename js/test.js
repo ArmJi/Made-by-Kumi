@@ -100,10 +100,12 @@ function handleGestureStart(e) {
     if (e.touches.length === 2) {
         lastScale = scale;
         lastDistance = null;
+
         // Calculate midpoint when gesture starts
         const [touch1, touch2] = e.touches;
-        midpointX = (touch1.clientX + touch2.clientX) / 2;
-        midpointY = (touch1.clientY + touch2.clientY) / 2;
+        startX = (touch1.clientX + touch2.clientX) / 2;
+        startY = (touch1.clientY + touch2.clientY) / 2;
+        lastDistance = distance(e);
     } else if (e.touches.length === 1) {
         startX = e.touches[0].clientX - currentX;
         startY = e.touches[0].clientY - currentY;
@@ -124,7 +126,7 @@ function handleGestureMove(e) {
         const scaleChange = distance / lastDistance;
         scale = lastScale * scaleChange;
 
-        // Calculate the new position based on the midpoint
+        // Calculate how much the fingers have moved on the X and Y axis
         const newX = (touch1.clientX + touch2.clientX) / 2;
         const newY = (touch1.clientY + touch2.clientY) / 2;
 
@@ -168,3 +170,8 @@ img.addEventListener('touchstart', handleGestureStart, false);
 img.addEventListener('touchmove', handleGestureMove, false);
 img.addEventListener('touchend', handleGestureEnd, false);
 img.addEventListener('wheel', handleWheel, false);
+
+// Helper function to calculate distance between two touches
+function distance(event) {
+    return Math.hypot(event.touches[0].pageX - event.touches[1].pageX, event.touches[0].pageY - event.touches[1].pageY);
+}
