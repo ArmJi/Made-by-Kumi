@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
   }
   .image-container {
@@ -24,9 +24,9 @@ body {
   }
   .thumbnail:hover {
     opacity: 0.8;
-  }
-  /* The Modal (background) */
-  .modal {
+  } */
+
+  /* .modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -39,7 +39,6 @@ body {
     background-color: #000000;
     background-color: rgba(0, 0, 0, 0.9);
   }
-  /* Modal Content (image) */
   .modal-content {
     margin: auto;
     display: block;
@@ -47,7 +46,6 @@ body {
     max-width: 700px;
     transition: transform 0.25s ease;
   }
-  /* The Close Button */
   .close {
     position: absolute;
     top: 15px;
@@ -62,7 +60,7 @@ body {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-  }
+  } */
   
 
   body, html {
@@ -82,7 +80,7 @@ body {
 }
 
 .zoomable-image {
-    transition: transform 0.25s ease;
+    transition: transform 0.1s ease;
     transform-origin: center center;
     cursor: grab;
 }
