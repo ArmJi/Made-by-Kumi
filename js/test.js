@@ -42,8 +42,11 @@ function handleGestureMove(e) {
         // Calculate the new position based on the midpoint
         // currentX = midpointX - midpointX * scale / lastScale;
         // currentY = midpointY - midpointY * scale / lastScale;
-        currentX = midpointX - startX;
-        currentY = midpointY - startY;
+        // currentX = midpointX - startX;
+        // currentY = midpointY - startY;
+
+        currentX = (((touch1.pageX + touch2.pageX) / 2) - startX) * 2; // x2 for accelarated movement
+        currentY = (((touch1.pageY + touch2.pageY) / 2) - startY) * 2; // x2 for accelarated movement
 
         setTransform();
     } else if (e.touches.length === 1) {
