@@ -64,3 +64,25 @@ body {
     cursor: pointer;
   }
   
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.zoom-container {
+    overflow: hidden;
+    touch-action: none;
+}
+
+.zoomable-image {
+    transition: transform 0.25s ease;
+    transform-origin: center center;
+    cursor: grab;
+}
