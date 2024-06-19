@@ -19,8 +19,8 @@ function handleGestureStart(e) {
     if (e.touches.length === 2) {
         lastScale = scale;
         lastDistance = null;
-        startX_two = (e.touches[0].pageX + e.touches[1].pageX) / 2;
-        startY_two = (e.touches[0].pageY + e.touches[1].pageY) / 2;
+        startX_two = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        startY_two = (e.touches[0].clientY + e.touches[1].clientY) / 2;
     } else if (e.touches.length === 1) {
         startX_One = e.touches[0].clientX - currentX;
         startY_One = e.touches[0].clientY - currentY;
@@ -49,8 +49,8 @@ function handleGestureMove(e) {
         // const deltaX = (((event.touches[0].pageX + event.touches[1].pageX) / 2) - start.x) * 2; // x2 for accelarated movement
         // const deltaY = (((event.touches[0].pageY + event.touches[1].pageY) / 2) - start.y) * 2; // x2 for accelarated movement
 
-        currentX = (midpointX - startX_two) * 2;
-        currentY = (midpointY - startY_two) * 2;
+        currentX = midpointX;
+        currentY = midpointY;
 
         setTransform();
     } else if (e.touches.length === 1) {
