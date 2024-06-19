@@ -27,8 +27,8 @@
     <script>
         const pinchZoom = (imageElement) => {
             let imageElementScale = 1;
-
             let start = {};
+            let lastTransform = { scale: 1, x: 0, y: 0 };
 
             // Calculate distance between two fingers
             const distance = (event) => {
@@ -36,7 +36,6 @@
             };
 
             imageElement.addEventListener('touchstart', (event) => {
-                console.log('touchstart', event);
                 if (event.touches.length === 2) {
                     event.preventDefault(); // Prevent page scroll
 
@@ -48,7 +47,6 @@
             });
 
             imageElement.addEventListener('touchmove', (event) => {
-                console.log('touchmove', event);
                 if (event.touches.length === 2) {
                     event.preventDefault(); // Prevent page scroll
                     let scale;
@@ -69,7 +67,7 @@
                     const deltaY = (((event.touches[0].pageY + event.touches[1].pageY) / 2) - start.y) * 2; // x2 for accelerated movement
 
                     // Transform the image to make it grow and move with fingers
-                    const transform = `translate3d(${deltaX}px, ${deltaY}px, 0) scale(${imageElementScale})`;
+                    const transform = `translate3d(${deltaX + lastTransform.x}px, ${deltaY + lastTransform.y}px, 0) scale(${imageElementScale})`;
                     imageElement.style.transform = transform;
                     imageElement.style.WebkitTransform = transform;
                     imageElement.style.zIndex = "9999";
@@ -77,10 +75,19 @@
             });
 
             imageElement.addEventListener('touchend', (event) => {
-                console.log('touchend', event);
-                // Reset image to its original format
-                imageElement.style.transform = "";
-                imageElement.style.WebkitTransform = "";
+                if (event.touches.length < 2) {
+                    // Store the last transform values
+                    const currentTransform = imageElement.style.transform;
+                    const matchScale = currentTransform.match(/scale\(([^)]+)\)/);
+                    const matchTranslate = currentTransform.match(/translate3d\(([^,]+)px,\s*([^,]+)px/);
+
+                    if (matchScale) lastTransform.scale = parseFloat(matchScale[1]);
+                    if (matchTranslate) {
+                        lastTransform.x += parseFloat(matchTranslate[1]);
+                        lastTransform.y += parseFloat(matchTranslate[2]);
+                    }
+                }
+                // Do not reset the transform, keep the image at its last position and scale
                 imageElement.style.zIndex = "";
             });
         }
