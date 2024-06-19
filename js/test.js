@@ -1,8 +1,10 @@
 const img = document.querySelector('.zoomable-image');
 let scale = 1;
 let lastScale = 1;
-let startX = 0;
-let startY = 0;
+let startX_One = 0;
+let startY_One = 0;
+let startX_two = 0;
+let startY_two = 0;
 let currentX = 0;
 let currentY = 0;
 let lastX = 0;
@@ -10,16 +12,18 @@ let lastY = 0;
 let lastDistance = null;
 
 function setTransform() {
-    img.style.transform = `translate3d(${currentX}px, ${currentY}px) scale(${scale})`;
+    img.style.transform = `translate(${currentX}px, ${currentY}px) scale(${scale})`;
 }
 
 function handleGestureStart(e) {
     if (e.touches.length === 2) {
         lastScale = scale;
         lastDistance = null;
+        startX_two = (e.touches[0].pageX + e.touches[1].pageX) / 2;
+        startY_two = (e.touches[0].pageY + e.touches[1].pageY) / 2;
     } else if (e.touches.length === 1) {
-        startX = e.touches[0].clientX - currentX;
-        startY = e.touches[0].clientY - currentY;
+        startX_One = e.touches[0].clientX - currentX;
+        startY_One = e.touches[0].clientY - currentY;
     }
 }
 
@@ -42,16 +46,16 @@ function handleGestureMove(e) {
         // Calculate the new position based on the midpoint
         // currentX = midpointX - midpointX * scale / lastScale;
         // currentY = midpointY - midpointY * scale / lastScale;
-        // currentX = midpointX - startX;
-        // currentY = midpointY - startY;
+        // const deltaX = (((event.touches[0].pageX + event.touches[1].pageX) / 2) - start.x) * 2; // x2 for accelarated movement
+        // const deltaY = (((event.touches[0].pageY + event.touches[1].pageY) / 2) - start.y) * 2; // x2 for accelarated movement
 
-        currentX = (((touch1.pageX + touch2.pageX) / 2) - startX) * 2; // x2 for accelarated movement
-        currentY = (((touch1.pageY + touch2.pageY) / 2) - startY) * 2; // x2 for accelarated movement
+        currentX = (midpointX - startX_two) * 2;
+        currentY = (midpointY - startY_two) * 2;
 
         setTransform();
     } else if (e.touches.length === 1) {
-        currentX = e.touches[0].clientX - startX;
-        currentY = e.touches[0].clientY - startY;
+        currentX = e.touches[0].clientX - startX_One;
+        currentY = e.touches[0].clientY - startY_One;
         setTransform();
     }
 }
@@ -85,5 +89,3 @@ img.addEventListener('touchstart', handleGestureStart, false);
 img.addEventListener('touchmove', handleGestureMove, false);
 img.addEventListener('touchend', handleGestureEnd, false);
 img.addEventListener('wheel', handleWheel, false);
-
-
