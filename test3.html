@@ -30,7 +30,6 @@
         const pinchZoom = (imageElement) => {
             let imageElementScale = 1;
             let start = {};
-            let current = {};
             let last = {}
 
             const distance = (event) => {
@@ -66,9 +65,9 @@
                     imageElement.style.transform = transform;
                     imageElement.style.WebkitTransform = transform;
                     imageElement.style.zIndex = "9999";
-                } else if (e.touches.length === 1) {
-                    const deltaX = e.touches[0].pageX - start.x;
-                    const deltaY  = e.touches[0].pageY - start.y;
+                } else if (event.touches.length === 1) {
+                    const deltaX = event.touches[0].pageX - start.x;
+                    const deltaY = event.touches[0].pageY - start.y;
                     const transform = `translate3d(${deltaX}px, ${deltaY}px, 0) scale(${imageElementScale})`;
                     imageElement.style.transform = transform;
                     imageElement.style.WebkitTransform = transform;
@@ -77,9 +76,8 @@
             });
 
             imageElement.addEventListener('touchend', (event) => {
-                // imageElement.style.transform = "";
-                // imageElement.style.WebkitTransform = "";
-                // imageElement.style.zIndex = "";
+                last.x = start.x;
+                last.y = start.y;
             });
         };
 
