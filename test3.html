@@ -30,6 +30,8 @@
         const pinchZoom = (imageElement) => {
             let imageElementScale = 1;
             let start = {};
+            let current = {};
+            let last = {}
 
             const distance = (event) => {
                 return Math.hypot(event.touches[0].pageX - event.touches[1].pageX, event.touches[0].pageY - event.touches[1].pageY);
@@ -65,9 +67,9 @@
             });
 
             imageElement.addEventListener('touchend', (event) => {
-                imageElement.style.transform = "";
-                imageElement.style.WebkitTransform = "";
-                imageElement.style.zIndex = "";
+                // imageElement.style.transform = "";
+                // imageElement.style.WebkitTransform = "";
+                // imageElement.style.zIndex = "";
             });
         };
 
